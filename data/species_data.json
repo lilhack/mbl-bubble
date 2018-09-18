@@ -1,0 +1,307 @@
+var species_json = {
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "id": 1, "properties": {
+  "name": "Snail Fur",
+  "population": 1,
+  "color": "#ffc0cb",
+  "LATITUDE": 41.513921,
+  "LONGITUDE": -70.677
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.677, 41.513921 ]
+  }
+},
+{ "type": "Feature", "id": 2, "properties": {
+  "name": "Long-claw Hermit Crab",
+  "population": 20,
+  "color": "#8a2be2",
+  "LATITUDE": 41.51372,
+  "LONGITUDE": -70.677
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.677, 41.51372 ]
+  }
+},
+{ "type": "Feature", "id": 3, "properties": {
+  "name": "Plumed Worm",
+  "population": 1,
+  "color": "#e65b00",
+  "LATITUDE": 41.51372,
+  "LONGITUDE": -70.677
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.677, 41.51372 ]
+  }
+},
+{ "type": "Feature", "id": 4, "properties": {
+  "name": "Bivalve",
+  "population": 1,
+  "color": "#00b32d",
+  "LATITUDE": 41.510323,
+  "LONGITUDE": -70.706405
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.706405, 41.510323 ]
+  }
+},
+{ "type": "Feature", "id": 5, "properties": {
+  "name": "Tiny Clam",
+  "population": 1,
+  "color": "#006700",
+  "LATITUDE": 41.513833,
+  "LONGITUDE": -70.676936
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.676936, 41.513833 ]
+  }
+},
+{ "type": "Feature", "id": 6, "properties": {
+  "name": "Tiny tube worm",
+  "population": 15,
+  "color": "#ffa500",
+  "LATITUDE": 41.512795,
+  "LONGITUDE": -70.703365
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.703365, 41.512795 ]
+  }
+},
+{ "type": "Feature", "id": 7, "properties": {
+  "name": "Sandworm",
+  "population": 30,
+  "color": "#b37400",
+  "LATITUDE": 41.513845,
+  "LONGITUDE": -70.677016
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.706405, 41.510323 ]
+  }
+},
+{ "type": "Feature", "id": 8, "properties": {
+  "name": "Jointworm",
+  "population": 3,
+  "color": "#ffc04d",
+  "LATITUDE": 41.513889,
+  "LONGITUDE": -70.676965
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.676965, 41.513889 ]
+  }
+},
+{ "type": "Feature", "id": 9, "properties": {
+  "name": "Green crab",
+  "population": 3,
+  "color": "#ffc04d",
+  "LATITUDE": 41.513889,
+  "LONGITUDE": -70.676965
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.676965, 41.513889 ]
+  }
+},
+{ "type": "Feature", "id": 10, "properties": {
+  "name": "Sea Cucumber",
+  "population": 10,
+  "color": "#008080",
+  "LATITUDE": 41.513833,
+  "LONGITUDE": -70.677132
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.677132, 41.513833 ]
+  }
+},
+{ "type": "Feature", "id": 11, "properties": {
+  "name": "Mud snail",
+  "population": 1,
+  "color": "#ffff00",
+  "LATITUDE": 41.512755,
+  "LONGITUDE": -70.703357
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.703357, 41.512755 ]
+  }
+},
+{ "type": "Feature", "id": 12, "properties": {
+  "name": "Tangle worm",
+  "population": 10,
+  "color": "#ff6500",
+  "LATITUDE": 41.513879,
+  "LONGITUDE": -70.6769
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.6769, 41.513879 ]
+  }
+},
+{ "type": "Feature", "id": 13, "properties": {
+  "name": "Sea Cucumber",
+  "population": 5,
+  "color": "#008080",
+  "LATITUDE": 41.514234,
+  "LONGITUDE": -70.676346
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.676346, 41.514234 ]
+  }
+},
+{ "type": "Feature", "id": 14, "properties": {
+  "name": "Mud Snail",
+  "population": 1,
+  "color": "#ffff00",
+  "LATITUDE": 41.575943,
+  "LONGITUDE": -70.64145
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.64145, 41.575943 ]
+  }
+},
+{ "type": "Feature", "id": 15, "properties": {
+  "name": "Flat-claw hermit crab",
+  "population": 5,
+  "color": "#6c2be2",
+  "LATITUDE": 41.576656,
+  "LONGITUDE": -70.639003
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.639003, 41.576656 ]
+  }
+},
+{ "type": "Feature", "id": 16, "properties": {
+  "name": "Long-claw hermit crab",
+  "population": 20,
+  "color": "#8a2be2",
+  "LATITUDE": 41.576672,
+  "LONGITUDE": -70.639038
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.639038, 41.576672 ]
+  }
+},
+{ "type": "Feature", "id": 17, "properties": {
+  "name": "Sponge",
+  "population": 1,
+  "color": "#ff0000",
+  "LATITUDE": 41.576739,
+  "LONGITUDE": -70.638938
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.638938, 41.576739 ]
+  }
+},
+{ "type": "Feature", "id": 18, "properties": {
+  "name": "Spider crab",
+  "population": 1,
+  "color": "#0015ff",
+  "LATITUDE": 41.576305,
+  "LONGITUDE": -70.640032
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.640032, 41.576305 ]
+  }
+},
+{ "type": "Feature", "id": 19, "properties": {
+  "name": "Hard clam",
+  "population": 20,
+  "color": "#00ff00",
+  "LATITUDE": 41.57677,
+  "LONGITUDE": -70.642
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.642, 41.57677 ]
+  }
+},
+{ "type": "Feature", "id": 20, "properties": {
+  "name": "Adult Spider Crab",
+  "population": 1,
+  "color": "#0015ff",
+  "LATITUDE": 41.577084,
+  "LONGITUDE": -70.640454
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.640454, 41.577084 ]
+  }
+},
+{ "type": "Feature", "id": 21, "properties": {
+  "name": "Mussel",
+  "population": 5,
+  "color": "#00b300",
+  "LATITUDE": 41.516512,
+  "LONGITUDE": -70.657752
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657752, 41.516512 ]
+  }
+},
+{ "type": "Feature", "id": 22, "properties": {
+  "name": "American Eel",
+  "population": 2,
+  "color": "#1dffb3",
+  "LATITUDE": 41.576491,
+  "LONGITUDE": -70.639459
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.639459, 41.576491 ]
+  }
+},
+{ "type": "Feature", "id": 23, "properties": {
+  "name": "Shark Eye Moon Snail",
+  "population": 1,
+  "color": "#ffd700",
+  "LATITUDE": 41.576314,
+  "LONGITUDE": -70.637657
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.637657, 41.576314 ]
+  }
+},
+{ "type": "Feature", "id": 24, "properties": {
+  "name": "Longnose Spider Crab",
+  "population": 1,
+  "color": "#2a00ff",
+  "LATITUDE": 41.516602,
+  "LONGITUDE": -70.657694
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657694, 41.516602 ]
+  }
+},
+{ "type": "Feature", "id": 25, "properties": {
+  "name": "Oyster Drill",
+  "population": 1,
+  "color": "#e7ff00",
+  "LATITUDE": 41.51685,
+  "LONGITUDE": -70.657928
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657928, 41.51685 ]
+  }
+},
+{ "type": "Feature", "id": 26, "properties": {
+  "name": "Crab",
+  "population": 1,
+  "color": "#800040",
+  "LATITUDE": 41.516673,
+  "LONGITUDE": -70.657787
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657787, 41.516673 ]
+  }
+},
+{ "type": "Feature", "id": 27, "properties": {
+  "name": "Green Crab",
+  "population": 3,
+  "color": "#cd00cd",
+  "LATITUDE": 41.516629,
+  "LONGITUDE": -70.65778
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.65778, 41.516629 ]
+  }
+},
+{ "type": "Feature", "id": 28, "properties": {
+  "name": "Polychaete",
+  "population": 20,
+  "color": "#ff7b00",
+  "LATITUDE": 41.516622,
+  "LONGITUDE": -70.657902
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657902, 41.516622 ]
+  }
+},
+{ "type": "Feature", "id": 29, "properties": {
+  "name": "Glycera",
+  "population": 10,
+  "color": "#ffd000",
+  "LATITUDE": 41.516629,
+  "LONGITUDE": -70.657855
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657855, 41.516629 ]
+  }
+},
+{ "type": "Feature", "id": 30, "properties": {
+  "name": "Sand Crab",
+  "population": 1,
+  "color": "#800060",
+  "LATITUDE": 41.516613,
+  "LONGITUDE": -70.657845
+  }, "geometry": {
+  "type": "Point", "coordinates": [ -70.657845, 41.516613 ]
+  }
+}
+
+]
+}
