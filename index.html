@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Finding Dory(teuthis)</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // This example creates circles on the map, representing populations in North
+      // America.
+
+      // First, create an object containing LatLng and population for each city.
+      var citymap = {
+        snailfur: {
+          center: {lat: 41.513921, lng: -70.677},
+          population: 1,
+          color: '#ffc0cb'
+        },
+        long_claw_hermit: {
+          center: {lat: 41.51372, lng: -70.677252},
+          population: 20,
+          color: '#8a2be2'
+        },
+        plumed_worm: {
+          center: {lat: 41.51372, lng: -70.677252},
+          population: 1,
+          color: '#e65b00'
+        },
+        bivalve: {
+          center: {lat: 41.510323, lng: -70.706405},
+          population: 1,
+          color: '#00b32d'
+        },
+        tiny_clam: {
+          center: {lat: 41.513833, lng: -70.676936},
+          population: 1,
+          color: '#006700'
+        },
+        tiny_tube_worm: {
+          center: {lat: 41.512795, lng: -70.703365},
+          population: 15,
+          color: '#ffa500'
+        },
+        sandworm: {
+          center: {lat: 41.513845, lng: -70.677016},
+          population: 30,
+          color: '#b37400'
+        },
+        jointworm: {
+          center: {lat: 41.513889, lng: -70.676965},
+          population: 3,
+          color: '#ffc04d'
+        },
+        green_crab: {
+          center: {lat: 41.512827, lng: -70.703304},
+          population: 1,
+          color: '#800080'
+        },
+        sea_cucumber: {
+          center: {lat: 41.513833, lng: -70.677132},
+          population: 10,
+          color: '#008080'
+        },
+        mud_snail:{
+          center: {lat: 41.512755, lng: -70.703357},
+          population: 1,
+          color: '#ffff00'
+        },
+        tangle_worm: {
+          center: {lat: 41.513879, lng: -70.6769},
+          population: 10,
+          color: '#ff6500'
+        },
+        sea_cucumber2: {
+          center: {lat: 41.514234, lng: -70.676346},
+          population: 5,
+          color: '#008080'
+        },
+        mud_snail2: {
+          center: {lat: 41.575943, lng: -70.64145},
+          population: 1,
+          color: '#ffff00'
+        },
+        flat_claw: {
+          center: {lat: 41.576656, lng: -70.639003},
+          population: 5,
+          color: '#6c2be2'
+        },
+        long_claw: {
+          center: {lat: 41.576672, lng: -70.639038},
+          population: 20,
+          color: '#8a2be2'
+        },
+        sponge: {
+          center: {lat: 41.576739, lng: -70.638938},
+          population: 1,
+          color: '#ff0000'
+        },
+        spider_small: {
+          center: {lat: 41.576305, lng: -70.640032},
+          population: 1,
+          color: '#0015ff'
+        },
+        hard_clam: {
+          center: {lat: 41.57677, lng: -70.642},
+          population: 20,
+          color: '#00ff00'
+        },
+        big_spider: {
+          center: {lat: 41.577084, lng: -70.640454},
+          population: 1,
+          color: '#0015ff'
+        },
+        mussel: {
+          center: {lat: 41.516512, lng: -70.657752},
+          population: 5,
+          color: '#00b300'
+        },
+        eel: {
+          center: {lat:  41.576491, lng: -70.639459},
+          population: 2,
+          color: '#1dffb3'
+        },
+        moon_snail: {
+          center: {lat: 41.576314, lng: -70.637657},
+          population: 1,
+          color: '#ffd700'
+        },
+        longnose_spider: {
+          center: {lat: 41.516602, lng: -70.657694},
+          population: 1,
+          color: '#2a00ff'
+        },
+        oyster_drill: {
+          center: {lat: 41.51685, lng: -70.657928},
+          population: 1,
+          color: '#e7ff00'
+        },
+        crabs_unknown: {
+          center: {lat: 41.516673, lng: -70.657787},
+          population: 1,
+          color: '#800040'
+        },
+        green_crab2: {
+          center: {lat: 41.516629, lng: -70.65778},
+          population: 3,
+          color: '#cd00cd'
+        },
+        polychaete: {
+          center: {lat: 41.516622, lng: -70.657902},
+          population: 20,
+          color: '#ff7b00'
+        },
+        glycera: {
+          center: {lat: 41.516629, lng: -70.657855},
+          population: 10,
+          color: '#ffd000'
+        },
+        sand_crab: {
+          center: {lat: 41.516613, lng: -70.657845},
+          population: 1,
+          color: '#800060'
+        }
+      };
+
+    /*  var width = 960,
+    height = 600;
+
+var formatNumber = d3.format(",.0f");
+
+var path = d3.geo.path()
+    .projection(null);
+
+var radius = d3.scale.sqrt()
+    .domain([0, 1e6])
+    .range([0, 15]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("transform", "translate(" + (width - 50) + "," + (height - 20) + ")")
+  .selectAll("g")
+    .data([1e6, 5e6, 1e7])
+  .enter().append("g");
+
+legend.append("circle")
+    .attr("cy", function(d) { return -radius(d); })
+    .attr("r", radius);
+
+legend.append("text")
+    .attr("y", function(d) { return -2 * radius(d); })
+    .attr("dy", "1.3em")
+    .text(d3.format(".1s"));*/
+
+
+      function initMap() {
+        // Create the map.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 41.547, lng: -70.650},
+          mapTypeId: 'terrain'
+        });
+
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+        for (var city in citymap) {
+          // Add the circle for this city to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: citymap[city].color,
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: citymap[city].color,
+            fillOpacity: 0.35,
+            map: map,
+            center: citymap[city].center,
+            radius: Math.sqrt(citymap[city].population) * 25
+          });
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMczWVlKQJ-BPHghoJn812TjsIcwDR4eo&callback=initMap">
+    </script>
+  </body>
+</html>
